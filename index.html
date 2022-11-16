@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Box</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form_container">
+      <h1 id="signupText">Sing Up</h1>
+      <form action="#" id="form">
+        <div class="form_group" id="nameField">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" id="nameValue" placeholder="Name" />
+        </div>
+
+        <div class="form_group">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" id="emailValue" placeholder="Email" />
+        </div>
+
+        <div class="form_group">
+          <i class="fa-solid fa-lock"></i>
+          <input
+            id="passValue"
+            type="password"
+            placeholder="Password"
+            minlength="8"
+            maxlength="16"
+          />
+        </div>
+        <p>Forget Password <a href="#">Click Here!</a></p>
+
+        <div class="button_group">
+          <button type="submit" id="signupBtn">Sign Up</button>
+          <button type="submit" class="disable" id="signinBtn">Sign In</button>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/70d1bd69fd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
